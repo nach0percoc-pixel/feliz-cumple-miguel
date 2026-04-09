@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
     <body style="text-align:center; font-family:sans-serif;">
-        <h1>Tengo algo para ti</h1>
-        <button onclick="mostrar()">Haz click</button>
-        <div id="contenido" style="display: none; margin-top: 20px;"
+        <h1>Tenemos algo para ti</h1>
+        <button onclick="intro()">Haz click</button>
+        <div id="contenido" style="display: none; margin-top: 20px;">
             <h2>Feliz cumpleaños</h2>
-            <p>Eres un máquina, Foster's, gracias por todo</p>
-            <img src="miguel.jpg" width="300"
+            <p>Eres un máquina, Foster's, gracias por todo. Tenemos algo que decirte...</p>
+            <img src="miguel.jpg" width="300"><br>
+            <button onclick="mensaje1()">Leer mensaje de Andy</button>
+        </div>
+        <div id="mensaje1" style="display: none; margin-top: 20px;">
+            <h2>Andy:</h2>
+            <p>Gracias por aparecer en mi vida, Moguela, espero que seas mi mejor amigo por muchos años más.</p>
+            <img src="1.jpg" width="300"><br>
+            <button onclick="mensaje2()">Leer mensaje de Esteban</button>
+        </div>
+        <div id="mensaje2" style="display: none; margin-top: 20px;">
+            <h2>Esteban:</h2>
+            <p>Feliz cumple, Miguel, ojalá no se te tape una arteria la próxima vez que comas Foster's, un abrazo.</p>
+            <img src="2.jpg" width="300"><br>
+            <button onclick="mensaje3()">Leer mensaje de Angulo</button>
+        </div>
+        <div id="mensaje3" style="display: none; margin-top: 20px;">
+            <h2>Angulo:</h2>
+            <p>Muchas gracias por tu amistad, espero que algún día me quieras dar una tarjeta premium para comer en el Foster's ilimitadamente, gracias de antemano y que Dios te bendiga.</p>
+            <img src="3.jpg" width="300"><br>
+            <button onclick="mensaje4()">Leer mensaje de Jazmín</button>
+        </div>
+        <div id="mensaje4" style="display: none; margin-top: 20px;">
+            <h2>Jazmín:</h2>
+            <p>MIGUEL! Mis más grandes felicitaciones. Espero que esto quede guardado como un gran recuerdo contigo, aunque nuestra amistad sea muy nueva, estoy muy contenta de habernos cruzado, la paso muy bien contigo cada vez que pasamos tiempo juntos y estoy muy feliz de tener tu cariño y amistad. Para mí a veces se me hace complicado congeniar con gente de mi edad pero tú eres una excepción. Además de eso, hacía tiempo quería poder contar con alguien que no le resultara pesado que fuera tan cariñosa, aún así si soy muy pegada, dímelo, lo entenderé sin problema. Espero poder seguir conociéndonos más cada día y seguir apoyándote en todo. Gracias también por escucharme, te quiero mucho, Miguel! Por cierto, cuida a Freak peluche, le quedan aún varios outfits que hacerle, eso próximamente.</p>
+            <img src="4.jpg" width="300"><br>
+            <button onclick="mensaje5()">Leer mensaje de Héctor</button>
+        </div>
+        <div id="mensaje5" style="display: none; margin-top: 20px;">
+            <h2>Héctor:</h2>
+            <p>Este cumpleaños significa que hemos pasado un año siendo colegas. Espero que pasemos muchos años más para que Zukong pueda seguir matando a Warryn. Con todo el cariño del mundo, de parte de Zukong, para el tío más tetón del universo.</p>
+            <img src="5.jpg" width="300"><br>
+            <button onclick="mensaje6()">Leer mensaje de Nacho</button>
+        </div>
+        <div id="mensaje6" style="display: none; margin-top: 20px;">
+            <h2>Nacho:</h2>
+            <p>Hey Foster's, ya me conoces, soy un tío de ciencias y lo de escribir se me da regular. Primero de todo siento mucho haber tardado tanto en darte el regalito pero no se me ocurría nada y lo de que ya tuvieras el Eevee ese es para matarte. En fin, como puedes ver tienes unos amigos muy majos, yo creo que se merecen una cena en el Foster's, no? Bueno, bueno, quiero que sepas que, aunque no te conozco desde hace mucho, has llenado un hueco en mi corazón (y en mi culo(te imaginas?? JAJAJA)) y solo puedo desearte todo lo bueno de este planeta AKA Angulo. Feliz cumple, Miguel, te queremos infinito + 1.</p>
+            <img src="6.jpg" width="300"><br>
+            <button onclick="final()">FELIZ CUMPLE</button>
+        </div>
+        <div id="final" style="display: none; margin-top: 20px;">
+            <h1>TE QUEREMOS MUCHO MIGUEL, FELIZ CUMPLEE!!!</h1>
+            <img src="7.jpg" width="300">
         </div>
         <script>
-            function mostrar() {
+            function intro() {
                 document.getElementById("contenido").style.display="block";
+            }
+            function mensaje1() {
+                document.getElementById("mensaje1").style.display= "block";
+            }
+            function mensaje2() {
+                document.getElementById("mensaje2").style.display= "block";
+            }
+            function mensaje3() {
+                document.getElementById("mensaje3").style.display= "block";
+            }
+            function mensaje4() {
+                document.getElementById("mensaje4").style.display= "block";
+            }
+            function mensaje5() {
+                document.getElementById("mensaje5").style.display= "block";
+            }
+            function mensaje6() {
+                document.getElementById("mensaje6").style.display= "block";
+            }
+            function final() {
+                document.getElementById("final").style.display= "block";
             }
         </script>
     </body>
